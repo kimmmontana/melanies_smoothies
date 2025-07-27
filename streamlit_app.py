@@ -43,9 +43,9 @@ if ingredients_list:
         st.success('Your Smoothie is ordered!', icon='✅')
 
 if ingredients_list:
-    ingredients_string = ''
+  ingredients_string = ''
 
   for fruit_chosen in ingredients_list:
-      ingredients_string += fruit_chosen + ''
-      fruityvice_response = requests.get("https://fruityvice.com/api/fruit/watermelon")
-      sf_df = st.dataframe(data=fruityvice_response.json(), use_container_width=True)
+    ingredients_string += fruit_chosen + ''
+    fruityvice_response = requests.get("https://fruityvice.com/api/fruit/watermelon")
+    sf_df = st.dataframe(data=fruityvice_response.json(), use_container_width=True)
